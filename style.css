@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.form-container, .preview-container {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea, .form-group select, .form-group button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ea7a7a;
+    border-radius: 4px;
+}
+
+.form-group button {
+    background: #007BFF;
+    color: white;
+    cursor: pointer;
+    border: none;
+    margin-top: 5px;
+}
+
+.form-group button:hover {
+    background: #0056b3;
+}
+
+.section {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.section h3 {
+    margin-top: 0;
+}
+
+.section-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.section-controls button {
+    background: #dc3545;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.section-controls button:hover {
+    background: #c82333;
+}
+
+.preview-container {
+    margin-top: 30px;
+}
+
+#resumePreview {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 4px;
+    background: #fff;
+}
+
+#imagePreview {
+    margin-top: 10px;
+}
+
+#resumePreview {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#resumePreview p {
+    margin: 5px 0;
+}
+
