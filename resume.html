@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Builder</h1>
+        <div class="form-container">
+            <form id="resumeForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="image">Upload Image:</label>
+                    <input type="file" id="image" name="image" accept="image/*">
+                    <div id="imagePreview"></div>
+                </div>
+                <div id="resumeDetails"></div>
+                
+                
+                <div class="form-group">
+                    <label for="github">GitHub:</label>
+                    <input type="text" id="github" name="github">
+                </div>
+                <div class="form-group">
+                    <label for="linkedin">LinkedIn:</label>
+                    <input type="text" id="linkedin" name="linkedin">
+                </div>
+                <div class="form-group">
+                    <label for="section-select">Add Section:</label>
+                    <select id="section-select">
+                        <option value="Education">Education</option>
+                        <option value="Work Experience">Work Experience</option>
+                        <option value="Skills">Skills</option>
+                        <option value="Awards">Awards</option>
+                    </select>
+                    <button type="button" onclick="addSection()">Add Section</button>
+
+                    
+                </div>
+                <div id="sections"></div>
+                <button type="button" onclick="previewResume()">Preview Resume</button>
+                
+            </form>
+        </div>
+        <div class="preview-container">
+            <h2>Resume Preview</h2>
+            <div id="resumePreview"></div>
+            <button onclick="downloadPDF()">Download as PDF</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+s
